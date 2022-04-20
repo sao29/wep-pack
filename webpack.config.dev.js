@@ -7,6 +7,7 @@ const TerserPlugin = require('terser-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
+
 module.exports = {
   entry: './src/index.js',
   output: {
@@ -14,7 +15,8 @@ module.exports = {
     filename: '[name].[contenthash].js',
   },
   mode:'development',
-  watch: true,
+  devtool: 'source-map',
+  // watch: true,
   resolve: {
     extensions: ['.js'],
     alias: {
