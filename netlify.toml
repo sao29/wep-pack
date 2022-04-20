@@ -1,0 +1,3 @@
+[build]
+    publisj = "dist"
+    command = "npm run build" 
